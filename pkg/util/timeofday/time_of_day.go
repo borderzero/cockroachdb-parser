@@ -34,12 +34,12 @@ const (
 	// Max is the maximum TimeOfDay value (1 second before midnight)
 	Max = Time2400
 
-	microsecondsPerSecond = 1e6
-	microsecondsPerMinute = 60 * microsecondsPerSecond
-	microsecondsPerHour   = 60 * microsecondsPerMinute
-	microsecondsPerDay    = 24 * microsecondsPerHour
-	nanosPerMicro         = 1000
-	secondsPerDay         = 24 * 60 * 60
+	microsecondsPerSecond int64 = 1e6
+	microsecondsPerMinute       = 60 * microsecondsPerSecond
+	microsecondsPerHour         = 60 * microsecondsPerMinute
+	microsecondsPerDay          = 24 * microsecondsPerHour
+	nanosPerMicro               = 1000
+	secondsPerDay               = 24 * 60 * 60
 )
 
 // New creates a TimeOfDay representing the specified time.
